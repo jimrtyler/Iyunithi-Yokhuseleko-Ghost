@@ -69,7 +69,9 @@ I-Ghost ibonelela **ngemisebenzi eli-16 yokuqinisa i-Windows** kunye **nokuditya
 ### Uvavanyo Lokhuseleko
 ```powershell
 # Layisha i-module ye-Ghost
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 
 # Jonga imeko yokhuseleko yangoku
 Get-Ghost
@@ -97,7 +99,9 @@ Set-Ghost -SMBv1 -RDP -USBStorage -Intune
 
 ### Inketho 1: Ukukhuphela Ngqo (Ukuvavanya)
 ```powershell
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 ```
 
 ### Inketho 2: Ukufakela i-Module
